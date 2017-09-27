@@ -1,0 +1,97 @@
+<html>
+<head>
+    <title>Selectores en CSS2.1</title>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="css/selectores.css"/>
+    <style>
+        /*
+        Selector universal
+         */
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 1em;
+            color: blue;
+        }
+        /*
+        Selector de tipo o etiqueta
+         */
+        h1 {
+            color: red;
+        }
+        h2 {
+            color: green;
+        }
+        p {
+            color: red;
+        }
+
+        /*
+        Conjuntos de selectores
+         */
+        h1, h2, h3 {
+            color: #8A8E27;
+            font-weight: normal;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 { font-size: 2em; }
+        h2 { font-size: 1.5em; }
+        h3 { font-size: 1.2em; }
+
+        /*
+            Selector descendiente
+         */
+        p span {
+            color: aqua;
+        }
+
+        ul li a{
+            color: greenyellow;
+        }
+        p * a { color: red; }
+
+        /*
+            Selectores de clase
+         */
+        .destacado { color: red; font-size: 2em; }
+
+        p.destacado { color: fuchsia; }
+
+
+        /*
+            Varias clases a la vez
+         */
+        .error { color: red; }
+        .destacado { font-size: 15px; }
+        .especial { font-weight: bold; }
+        .error.destacado { color: blue; }
+
+        /*
+            Selector por ID
+         */
+        #destacado { color: red; }
+        p#aviso { color: blue; }
+    </style>
+</head>
+
+<body>
+<h2>Un título</h2>
+<p>Mi pequeño párrafo</p>
+<p>Mi otro pequeño párrafo</p>
+<p><span>Contenido del span</span></p>
+<p><a href="#">Enlace</a></p>
+<p><span><a href="#">Enlace</a></span></p>
+
+<p class="destacado">Lorem ipsum dolor sit amet...</p>
+<p>Nunc sed lacus et <a href="#" class="destacado">est adipiscing</
+    a> accumsan...</p>
+<p class="especial destacado error">Párrafo de texto...</p>
+
+<p id="destacado">Segundo párrafo</p>
+<span>Otro span</span>
+<ul>
+    <li><a href="index.html">Volver al Inicio</a></li>
+</ul>
+</body>
+</html>
