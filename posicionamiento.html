@@ -10,6 +10,7 @@
         }
         div.relative {
             position: relative;
+            top: 30px;
             left: 30px;
             border: 3px solid #73AD21;
         }
@@ -41,12 +42,16 @@
             position: absolute;
             left: 0px;
             top: 0px;
-            z-index: -1;
+            z-index: 1;
         }
     </style>
 </head>
 
 <body>
+
+<div class="relative">This div element has position: relative;
+    <div class="absolute">This div element has position: absolute;</div>
+</div>
 <div id="parrafo">
     <p>mi parrafo <span>completo</span></p>
 </div>
@@ -61,14 +66,12 @@
     <div id="d3"><p>mi parrafo <span>completo</span></p></div>
 </div>
 <div id="contenedor3">
-    <div id="e1" class="fixed"><p>mi parrafo <span>completo</span></p></div>
+    <div id="e1" class="fixed"><p>mi parrafo <span>completo</span> fijado</p></div>
     <div id="e2"><p>mi parrafo <span>completo</span></p></div>
     <div id="e3"><p>mi parrafo <span>completo</span></p></div>
 </div>
 
-<div class="relative">This div element has position: relative;
-    <div class="absolute">This div element has position: absolute;</div>
-</div>
+
 
 <p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
 <p>Note: IE/Edge 15 and earlier versions do not support sticky position.</p>

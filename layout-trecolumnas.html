@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>Layout Tres columnas en CSS2.1</title>
+    <meta charset="UTF-8">
+    <style>
+        div {
+            border: 1px solid red;
+        }
+        #contenido{
+            overflow: hidden;
+        }
+        #contenido #menu{
+            width: 33%;
+            float: left;
+        }
+        #contenido #principal{
+            width: 33%;
+            float: left;
+        }
+        #contenido #lateral{
+            width: 33%;
+            float: left;
+        }
+        #contenido4{
+            overflow: hidden;
+        }
+        #contenido4 #menu4{
+            width: 24%;
+            float: left;
+
+        }
+        #contenido4 #principal4{
+            width: 24%;
+            float: left;
+            margin-left: 0.5%;
+        }
+        #contenido4 #lateral4{
+            width: 24%;
+            float: left;
+            margin-left: 1%;
+        }
+        #contenido4 #lateral42{
+            width: 24%;
+            float: right;
+            margin-left: 0.5%;
+        }
+    </style>
+    <!--link type="text/css" rel="stylesheet" href="css/fichero.css"/-->
+</head>
+
+<body>
+<div id="cabecera">
+    Cabecera
+</div>
+<div id="contenido">
+    <div id="menu">
+        <ul>
+            <li><a href="index.html">Volver al Inicio</a></li>
+        </ul>
+    </div>
+    <div id="principal">Contenido</div>
+    <div id="lateral">Barra lateral</div>
+</div>
+<div id="contenido4">
+    <div id="menu4">
+        <ul>
+            <li><a href="index.html">Volver al Inicio</a></li>
+        </ul>
+    </div>
+    <div id="principal4">Contenido</div>
+    <div id="lateral4">Barra lateral</div>
+    <div id="lateral42">Barra lateral</div>
+</div>
+<div id="pie">pie de página</div>
+
+</body>
+</html>

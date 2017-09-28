@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Layout dos columnas en CSS2.1</title>
+    <meta charset="UTF-8">
+    <!--link type="text/css" rel="stylesheet" href="css/fichero.css"/-->
+    <style>
+        div {
+            border: 1px solid red;
+        }
+        #contenido{
+            overflow: hidden;
+        }
+        #contenido #menu{
+            width: 33%;
+            float: left;
+        }
+        #contenido #principal{
+            width: 66%;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+<div id="cabecera">
+Cabecera
+</div>
+<div id="contenido">
+    <div id="menu">
+        <ul>
+            <li><a href="index.html">Volver al Inicio</a></li>
+        </ul>
+    </div>
+    <div id="principal">Contenido</div>
+</div>
+<div id="pie">pie de página</div>
+
+</body>
+</html>

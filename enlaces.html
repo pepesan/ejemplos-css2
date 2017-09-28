@@ -1,0 +1,116 @@
+<html>
+<head>
+    <title>Enlaces en CSS2.1</title>
+    <meta charset="UTF-8">
+    <!--link type="text/css" rel="stylesheet" href="css/fichero.css"/-->
+    <style>
+
+        a:link {
+            background-color: yellow;
+        }
+
+        a:visited {
+            background-color: cyan;
+        }
+
+        a:hover {
+            background-color: lightgreen;
+        }
+
+        a:active {
+            background-color: hotpink;
+        }
+
+        #menu a:link, a:visited {
+            background-color: #f44336;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+
+        #menu a:hover, a:active {
+            background-color: red;
+        }
+
+        #horizontal ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #horizontal li {
+            float: left;
+        }
+
+        #horizontal li a {
+            display: block;
+            padding: 8px;
+            background-color: #dddddd;
+        }
+
+        #navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        #navbar li {
+            float: left;
+        }
+
+        #navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+        #navbar li a:link{
+            background-color: black;
+        }
+
+        #navbar li a:hover {
+            background-color: #111;
+        }
+    </style>
+</head>
+
+<body>
+<nav>
+    <ul>
+        <li><a href="index.html">Enlace</a> </li>
+        <li><a href="index.html">Enlace</a> </li>
+        <li><a href="index.html">Enlace</a> </li>
+        <li><a href="index.html">Enlace</a> </li>
+    </ul>
+</nav>
+<div id="menu"> <a href="index.html" target="_blank">This is a link</a></div>
+<div id="horizontal">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+</div>
+
+<div id="navbar">
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+</div>
+<ul>
+    <li><a href="index.html">Volver al Inicio</a></li>
+</ul>
+</body>
+</html>
