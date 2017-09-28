@@ -1,0 +1,73 @@
+<html>
+<head>
+    <title>Unidades de Medida en CSS2.1</title>
+    <meta charset="UTF-8">
+    <!--link type="text/css" rel="stylesheet" href="css/fichero.css"/-->
+    <style>
+        /* El cuerpo de la página debe mostrar un margen de media pulgada */
+        body { margin: 0.5in; }
+        /* Los elementos <h1> deben mostrar un interlineado de 2 centímetros */
+        h1 { line-height: 2cm; }
+        /* Las palabras de todos los párrafos deben estar separadas 4 milímetros entre si */
+        p { word-spacing: 4mm; }
+        /* Los enlaces se deben mostrar con un tamaño de letra de 12 puntos */
+        a { font-size: 12pt }
+        /* Los elementos <span> deben tener un tamaño de letra de 1 pica */
+        span { font-size: 1pc }
+        /* medida que depende del tamaño de la tipografía normalmente 12 puntos */
+        /*
+            1 em = 12pt
+            2 em = 24pt
+         */
+        p { margin: 1em; }
+
+        /*
+        Los párrafos suelen tener un tamaño de 16px y el em se calcula en base a eso
+         */
+        p { font-size: 32px; margin: 1em; }
+
+        /*
+            Mezclando unidades de medida
+         */
+        body { font-size: 10px; }
+        h1 { font-size: 2.5em; }
+
+        /*
+            Herencia de propiedades de padres a hijos
+         */
+        body {
+            font-size: 12px;
+            text-indent: 3em;
+        }
+        h1 { font-size: 15px }
+
+        /*
+            Porcentajes
+         */
+        body { font-size: 1em; }
+        h1 { font-size: 200%; }
+        h2 { font-size: 150%; }
+
+        /*
+            Porcentajes en Anchos
+         */
+        div#contenido { width: 600px; }
+        div.principal { width: 80%; }
+    </style>
+</head>
+
+<body>
+<div id="contenido">
+    <h1>Un título</h1>
+    <p>Un párrafo</p>
+    <div class="principal">
+        <p><a href="enlace.html">Enlace</a></p>
+        <p><span>Un span</span></p>
+        <ul>
+            <li><a href="index.html">Volver al Inicio</a></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

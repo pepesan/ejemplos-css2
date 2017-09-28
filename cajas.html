@@ -1,0 +1,115 @@
+<html>
+<head>
+    <title>Cajas en CSS2.1</title>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="css/fichero.css"/>
+    <style>
+        /*
+            Definición del ancho
+         */
+        #lateral { width: 200px; }
+        /*
+            Definición del alto
+         */
+        #cabecera { height: 60px; }
+        /*
+            Definición del margen
+         */
+        .destacado {
+            margin-left: 2em;
+        }
+        /*
+            Definición pormenorizada del margen
+         */
+        div img {
+            margin-top: .5em;
+            margin-bottom: .5em;
+            margin-left: 1em;
+            margin-right: .5em;
+        }
+        div img {
+            margin: .5em .5em .5em 1em;
+        }
+        div img {
+            margin: .5em;
+            margin-left: 1em;
+        }
+        /*
+            Manejo del padding
+         */
+        /* Todos los rellenos valen 2em */
+        body {padding: 2em}
+        /* Superior e inferior = 1em, Izquierdo y derecho = 2em */
+        body {padding: 1em 2em}
+        /* Superior = 1em, derecho = 2em, inferior = 3em, izquierdo = 2em */
+        body {padding: 1em 2em 3em}
+        /* Superior = 1em, derecho = 2em, inferior = 3em, izquierdo = 4em */
+        body {padding: 1em 2em 3em 4em}
+
+        /*
+            Bordes
+         */
+        div {
+            border-top-width: 10px;
+            border-right-width: 1em;
+            border-bottom-width: thick;
+            border-left-width: thin;
+        }
+
+        p { border-width: thin thick medium thin } /* thin thick medium
+thin */
+        /*
+            Color de borde
+        */
+        div{
+            border-color:blue;
+        }
+        /*
+            Estilos de borde
+         */
+        div {
+            border-top-style: dashed;
+            border-right-style: double;
+            border-bottom-style: dotted;
+            border-left-style: solid;
+        }
+        /*
+            Shorthand
+         */
+        h1 {
+            border-bottom: solid red 1px;
+        }
+        /*
+            Todo junto
+         */
+        div {
+            width: 300px;
+            padding-left: 50px;
+            padding-right: 50px;
+            margin-left: 30px;
+            margin-right: 30px;
+            border: 10px solid black;
+        }
+    </style>
+</head>
+
+<body>
+<div id="cabecera">
+</div>
+<div id="lateral">
+</div>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam et elit.
+    Vivamus placerat lorem. Maecenas sapien. Integer ut massa. Cras diam ipsum,
+    laoreet non, tincidunt a, viverra sed, tortor.</p>
+
+<p class="destacado">Vestibulum lectus diam, luctus vel, venenatis
+    ultrices, cursus vel, tellus. Etiam placerat erat non sem. Nulla
+    molestie odio non nisl tincidunt faucibus.</p>
+<img src="img/css.png"/>
+<ul>
+    <li><a href="index.html">Volver al Inicio</a></li>
+</ul>
+</body>
+</html>
+

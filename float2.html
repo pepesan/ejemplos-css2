@@ -1,0 +1,128 @@
+<html>
+<head>
+    <title>Float en CSS2.1</title>
+    <meta charset="UTF-8">
+    <!--link type="text/css" rel="stylesheet" href="css/fichero.css"/-->
+    <style>
+        div{
+            border: green 1px solid;
+            margin-bottom: 10px;
+            background-color: red;
+        }
+        .caja{
+            width: 400px;
+            height: 50px;
+            border: red 1px solid;
+            background-color: green;
+        }
+        .flota-der{
+            float: right;
+        }
+        .over{
+            overflow: hidden;
+        }
+        .treinta{
+            width: 30%;
+        }
+        .setenta{
+            width: 70%;
+        }
+        .clearleft{
+            clear: left;
+        }
+        .clearright{
+            clear: right;
+        }
+        .sinborde{
+            border: 0px;
+        }
+
+
+        #container {
+            color: white;
+            background: #ffbd17;
+            width: 400px;
+            height: 260px;
+        }
+
+        #content {
+            background: #06c;
+            position: relative;
+            float: left;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #wrapper {
+            background-color: green; /* for vizualization purposes */
+            text-align: center;
+        }
+        #yourdiv {
+            background-color: red; /* for vizualization purposes */
+            display: inline-block;
+        }
+
+        div.centre
+        {
+            text-align: center;
+            width: 200px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+<div>
+    <div class="caja">1</div>
+    <div class="caja">2</div>
+    <div class="caja">3</div>
+</div>
+<div>
+    <div class="caja flota-der">1</div>
+    <div class="caja">2</div>
+    <div class="caja">3</div>
+</div>
+<div class="over">
+    <div class="caja flota-der">1</div>
+    <div class="caja flota-der">2</div>
+    <div class="caja flota-der">3</div>
+</div>
+<div class="over">
+    <div class="caja flota-der treinta">1</div>
+    <div class="caja flota-der treinta">2</div>
+    <div class="caja flota-der treinta">3</div>
+</div>
+
+<div class="over">
+    <div class="caja flota-der treinta">1</div>
+    <div class="caja flota-der treinta">2</div>
+    <div class="caja flota-der treinta">3</div>
+</div>
+<div class="over">
+    <div class="caja flota-der treinta">1</div>
+    <div class="caja flota-der treinta">2</div>
+    <div class="caja flota-der treinta clearright">3</div>
+</div>
+<div class="over">
+    <div class="caja flota-der treinta sinborde">1</div>
+    <div class="caja flota-der setenta sinborde">2</div>
+    <div class="caja flota-der treinta clearright">3</div>
+</div>
+<div id="container">
+    <div id="content">
+        Line 1
+    </div>
+</div>
+
+<div id="wrapper">
+    <div id="yourdiv">Your text</div>
+</div>
+
+<div class="centre">Some Text</div>
+<ul>
+    <li><a href="index.html">Volver al Inicio</a></li>
+</ul>
+</body>
+</html>
