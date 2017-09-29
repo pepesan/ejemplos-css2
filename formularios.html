@@ -1,0 +1,81 @@
+<html>
+<head>
+    <title>Formularios en CSS2.1</title>
+    <meta charset="UTF-8">
+    <!--link type="text/css" rel="stylesheet" href="css/fichero.css"/-->
+    <style>
+        .enlace {
+            border: 0px;
+            padding: 0px;
+            background-color: transparent;
+            color: blue;
+            border-bottom: 1px solid blue;}
+
+        form.elegante input {
+            padding: .2em;
+        }
+        label {
+            display: block;
+            margin: .5em 0 0 0;
+        }
+        .btn {
+            display: block;
+            margin: 1em 0;}
+        div {
+            margin: .4em 0;
+        }
+        div label {
+            width: 25%;
+            float: left;
+        }
+        form fieldset {
+            float: left;
+            width: 43%;
+        }
+        form{
+            clear: both;
+            overflow: hidden;
+        }
+        input:focus {
+            border: 2px solid #000;
+            background: #F3F3F3;
+        }
+    </style>
+</head>
+
+<body>
+
+<input type="button" value="Botón normal" />
+<input class="enlace" type="button" value="Botón como enlace" />
+
+<form action="" method="post" name="formu" class="elegante">
+    <fieldset>
+        <legend>Alta en el servicio</legend>
+        <div>
+            <label for="nombre">Nombre</label>
+            <input name="nombre" id="nombre" type="text"/>
+        </div>
+        <div>
+            <label for="pass">Contraseña</label>
+            <input name="pass" id="pass" type="text"/>
+        </div>
+            <input class="btn" type="submit" name="submit" value="submit"/>
+    </fieldset>
+    <fieldset>
+        <legend>Datos de contacto</legend>
+        <div>
+            <label for="tlf">Teléfono</label>
+            <input name="tlf" id="tlf" type="tel"/>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input name="email" id="email" type="email"/>
+        </div>
+
+    </fieldset>
+</form>
+<ul>
+    <li><a href="index.html">Volver al Inicio</a></li>
+</ul>
+</body>
+</html>
