@@ -1,1 +1,6 @@
-p { color: red; font-family: Verdana; }
+p { 
+    color: red; 
+    opacity: 0.8;
+    font-family: Verdana; 
+    text-transform: capitalize;
+}
