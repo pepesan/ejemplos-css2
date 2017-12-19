@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <!--link type="text/css" rel="stylesheet" href="css/fichero.css"/-->
     <style>
-        div {
+        div, header, footer, nav, section,article {
             border: 1px solid red;
         }
-        #contenido{
+        section{
             overflow: hidden;
         }
-        #contenido #menu{
+        section nav{
             width: 33%;
             float: left;
         }
-        #contenido #principal{
+        section article{
             width: 66%;
             float: left;
         }
@@ -22,18 +22,23 @@
 </head>
 
 <body>
-<div id="cabecera">
-Cabecera
-</div>
-<div id="contenido">
-    <div id="menu">
-        <ul>
-            <li><a href="index.html">Volver al Inicio</a></li>
-        </ul>
-    </div>
-    <div id="principal">Contenido</div>
-</div>
-<div id="pie">pie de página</div>
+    <header>
+        <h1>Cabecera</h1>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Volver al Inicio</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>Contenido</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit saepe, at voluptas excepturi dolor exercitationem animi facere qui, sit voluptatibus dolorem tenetur. Debitis alias earum possimus consequuntur, ipsum optio eaque.</p>
+        </article>
+    </section>
+    <footer>
+        <h1>pie de página</h1>
+    </footer>
 
 </body>
 </html>
