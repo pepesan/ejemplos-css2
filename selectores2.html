@@ -1,0 +1,126 @@
+<html>
+
+<head>
+    <title>Selectores en CSS2.1</title>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="css/selectores.css" />
+    <style>
+        body {
+            color: blue;
+        }
+
+        body h2 {
+            color: green;
+        }
+
+        body p {
+            color: grey;
+        }
+
+        .verde {
+            color: green;
+        }
+
+        .grande {
+            font-size: 1.5em;
+        }
+
+        .una_clase {
+            color: blue;
+        }
+
+        h1 {
+            color: green;
+        }
+
+        h1~h2 {
+            color: red;
+        }
+
+        /* selector general de hermanos */
+
+        h1+h2 {
+            color: blue;
+        }
+
+        /* selector adyacente */
+
+        ul li:first-child {
+            color: aqua;
+        }
+
+        ul li:last-child {
+            color: grey;
+        }
+
+        /*
+        segundo hijo
+        */
+
+        ul li:nth-child(2) {
+            color: green;
+        }
+        
+        /*
+        penúltimo hijo
+        */
+        ul li:nth-last-child(2){
+            color: bisque;
+        }
+        /*
+        par
+        */
+
+        div p:nth-child(2n+0) {
+            background: red;
+        }
+
+        /*
+        impar
+        */
+
+        div p:nth-child(2n+1) {
+            background: blue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Otro título</h1>
+    <h2 class="una_clase">Un título</h2>
+    <p class="verde grande">Mi pequeño párrafo</p>
+    <p class="verde">Mi otro pequeño párrafo</p>
+    <div id="abuelo">
+        <h1>H1</h1>
+        <h2>H2 Hermano Adyacente</h2>
+        <p>p</p>
+        <div id="padre">
+            <h2 id="nieto">H2 interno</h2>
+        </div>
+        <h2>H2 Hermano No Adyacente</h2>
+
+    </div>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+    <div>
+        <p>The first paragraph.</p>
+        <p>The second paragraph.</p>
+        <p>The third paragraph.</p>
+        <p>The fourth paragraph.</p>
+        <p>The fifth paragraph.</p>
+        <p>The sixth paragraph.</p>
+        <p>The seventh paragraph.</p>
+        <p>The eight paragraph.</p>
+        <p>The ninth paragraph.</p>
+    </div>
+</body>
+
+</html>
