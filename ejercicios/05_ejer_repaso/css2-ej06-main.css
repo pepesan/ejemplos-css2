@@ -1,0 +1,84 @@
+/* === IMPORTANTE ===================================================
+   No modificar estos estilos, ya que son imprescindibles para
+   que la p�gina se vea correctamente.
+   ================================================================== */
+
+/*-- B�sico ----------------------------------------------------------*/
+ul, ul li { margin: 0; padding: 0; list-style: none; }
+h1, h2, h3, p, form { margin: 0; padding: 0; }
+.clear { clear: both; }
+img { border: none; }
+
+/*-- Layout ----------------------------------------------------------*/
+.contenedor {
+  width: 90%;
+  max-width: 900px;
+  width: expression(document.body.clientWidth > 901? "900px": "auto");
+  margin: 0 auto;
+}
+
+.cabecera, .menu, .lateral, .contenido, .contenido .principal, .contenido .secundario, .pie {
+  border: 2px solid #777;
+}
+
+.cabecera { clear: both;}
+.menu { clear: both;}
+.lateral { float: left; width: 20%; }
+.contenido { float: right; width: 78%; }
+.contenido .principal { float: left; width: 78%; }
+.contenido .secundario { float: right; width: 20%; }
+.pie { clear: both; }
+
+/*-- Cabecera --------------------------------------------------------*/
+.cabecera .logo { float: left; }
+.cabecera .buscador { float: right; }
+
+/*-- Menu ------------------------------------------------------------*/
+.menu ul.menu_principal li { display: inline; float: left; }
+
+/*-- Secci�n Principal -----------------------------------------------*/
+.contenido .principal .articulo img { width: 100px; float: left; }
+
+/*-- Pie de p�gina ---------------------------------------------------*/
+.pie .enlaces   { float: left; }
+.pie .copyright { float: right; }
+
+/* === IMPORTANTE ===================================================
+   A partir de aqu�, se pueden a�adir todos los estilos propios que
+   sean necesarios.
+   ================================================================== */
+/***EJERCICIO 3****/
+   *{box-sizing: border-box;}
+   .cabecera{padding:1em;}
+   .menu{padding: 1em;margin-bottom: 0.5em;}
+   .noticias, .publicidad, .principal, .secundario { padding:0.5em;}
+   .pie {padding-top:0.5em;padding-bottom: 0.5em;}
+   .articulo {padding:1em;}
+   img { margin: 0.5em;}
+   .publicidad{padding-top: 1em;}
+   .pie{ margin-top: 1em;}
+
+/***EJERCICIO 4****/
+
+.cabecera, .menu, .lateral, .contenido, .contenido .principal, .contenido .secundario, .pie {
+  border: 0px;}
+
+.menu {border-bottom: 1px solid #004C99;}
+.noticias{border:1px solid #C5C5C5;}
+.publicidad{border:1px dashed #CC6600;}
+.contenido .secundario{border:1px solid #CC6600;}
+.pie{ border-bottom: 1px solid #C5C5C5;border-top: 1px solid #C5C5C5;}
+
+/***EJERCICIO 5****/
+.noticias, .pie{ background-color: #F8F8F8;}
+.publicidad{background-color: #FFF6CD;}
+.secundario h2{background-color: #DB905C;padding:0.2em;}
+.menu{background-image: url("fondo_menu.gif");}
+.cabecera h1{background-image: url("logo.gif");}
+
+/***EJERCICIO 5 REPASO****/
+.cabecera, .pie{ background-color: 	#F5F5F5;}
+.contenido, .noticias {background-color: #D8BFD8;}
+h1, h2, h3, .contenido .principal h2,.contenido .secundario h2, .noticias h3 a, .actualidad h3 a, .publicidad h3 a{ background-color: #4682B4; color:#F5F5F5;}
+.noticias h3 a, .actualidad h3 a{border-bottom: 1px dashed white;}
+.cabecera{border-bottom: 3px solid grey;}
